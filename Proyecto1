@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class PositivoNegativo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Declarar una variable entera
+        int numero;
+
+        // Solicitar al usuario un valor para la variable
+        System.out.print("Ingrese un número entero: ");
+        numero = sc.nextInt();
+
+        // Verificar si el número es positivo o negativo (considerando 0 como positivo)
+        if (numero >= 0) {
+            System.out.println("El número " + numero + " es positivo.");
+        } else {
+            System.out.println("El número " + numero + " es negativo.");
+        }
+
+        sc.close();
+    }
+}
+
